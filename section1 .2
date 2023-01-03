@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    // ask the user to enter the marks for each unit
+    System.out.print("Enter the marks for unit 1: ");
+    double unit1 = scanner.nextDouble();
+    System.out.print("Enter the marks for unit 2: ");
+    double unit2 = scanner.nextDouble();
+    System.out.print("Enter the marks for unit 3: ");
+    double unit3 = scanner.nextDouble();
+    System.out.print("Enter the marks for unit 4: ");
+    double unit4 = scanner.nextDouble();
+    System.out.print("Enter the marks for unit 5: ");
+    double unit5 = scanner.nextDouble();
+
+    // calculate the average
+    double average = (unit1 + unit2 + unit3 + unit4 + unit5) / 5;
+
+    // display the average with two decimal places
+    System.out.printf("The average is: %.2f", average);
+  }
+}
