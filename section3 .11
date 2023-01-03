@@ -1,0 +1,7 @@
+An event in a GUI application is a user-initiated action or a system-generated notification that requires a response from the program. Events are generated when a user interacts with the graphical elements of a GUI, such as clicking a button, entering text in a text field, or moving the mouse.
+
+Here are two examples of events and how a program might respond to them:
+
+    Button click event: When a user clicks a button in a GUI application, a button click event is generated. The program can respond to this event by executing a predefined action, such as displaying a message, performing a calculation, or retrieving data from a database.
+
+    Text field change event: When a user enters or modifies text in a text field, a text field change event is generated. The program can respond to this event by updating the display, performing validation checks, or triggering other actions based on the entered text
