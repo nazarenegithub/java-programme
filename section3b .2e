@@ -1,0 +1,9 @@
+The output of the program would be:
+
+obmaJ
+
+Here's how the output is calculated:
+
+    On line 4, a new StringBuffer object named str1 is created and initialized with the string "Jambo".
+    On line 5, the reverse() method is called on the str1 object, which reverses the order of the characters in the object. The method returns a new StringBuffer object containing the reversed string.
+    On line 6, the println() method is called on the str2 object, which prints the contents of the object to the console.
