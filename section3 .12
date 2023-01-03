@@ -1,0 +1,19 @@
+    Polymorphism and encapsulation:
+
+    Polymorphism refers to the ability of a single object to take on multiple forms, depending on the context in which it is used. Polymorphism allows you to use the same interface to invoke methods with different implementations, depending on the type of the object.
+    Encapsulation is the process of enclosing the implementation details of a class within the class itself, hiding them from the outside world. Encapsulation helps to protect the internal state of an object and promotes code reuse and modularity.
+
+    Method overloading and method overriding:
+
+    Method overloading refers to the ability to define multiple methods with the same name but with different parameter lists in the same class or subclass. Method overloading allows you to provide multiple implementations for a given method, depending on the number or type of arguments passed to the method.
+    Method overriding refers to the ability to define a method in a subclass that has the same name, return type, and parameter list as a method in the superclass. Method overriding allows you to provide a new implementation for a method inherited from the superclass and to extend or modify the behavior of the inherited method.
+
+    Class and interface:
+
+    A class is a blueprint for creating objects that define the properties and behaviors of the objects. A class can contain fields (variables), methods (functions), and constructors (methods used to create objects).
+    An interface is a blueprint for a group of related classes that defines a set of methods that the classes must implement. An interface specifies the behavior of an object, but does not provide an implementation for the methods.
+
+    Inheritance and polymorphism:
+
+    Inheritance refers to the ability of a class to inherit properties and behaviors from a superclass. Inheritance allows you to create a new class (the subclass) based on an existing class (the superclass) and to extend or modify the inherited properties and behaviors.
+    Polymorphism refers to the ability of a single object to take on multiple forms, depending on the context in which it is used. Polymorphism allows you to use the same interface to invoke methods with different implementations, depending on the type of the object.
