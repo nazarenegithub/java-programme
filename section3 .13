@@ -1,0 +1,51 @@
+    Method overloading: Method overloading is a form of static polymorphism that allows you to define multiple methods with the same name but with different parameter lists in the same class or subclass. Method overloading allows you to provide multiple implementations for a given method, depending on the number or type of arguments passed to the method.
+
+Here is an example of how you can use method overloading to implement polymorphism in Java:
+
+public class Main {
+  public static void main(String[] args) {
+    // call the overloaded method with different parameter lists
+    System.out.println(calculate(2, 3)); // prints 5
+    System.out.println(calculate(2.5, 3.5)); // prints 6.0
+    System.out.println(calculate(2, 3, 4)); // prints 9
+  }
+
+  // overloaded method with different parameter lists
+  public static int calculate(int a, int b) {
+    return a + b;
+  }
+
+  public static double calculate(double a, double b) {
+    return a + b;
+  }
+
+  public static int calculate(int a, int b, int c) {
+    return a + b + c;
+  }
+}
+    Method overriding: Method overriding is a form of dynamic polymorphism that allows you to define a method in a subclass that has the same name, return type, and parameter list as a method in the superclass. Method overriding allows you to provide a new implementation for a method inherited from the superclass and to extend or modify the behavior of the inherited method.
+
+Here is an example of how you can use method overriding to implement polymorphism in Java:
+
+public class Main {
+  public static void main(String[] args) {
+    // create an instance of the subclass
+    Child c = new Child();
+
+    // call the overridden method
+    c.sayHello(); // prints "Hello from Child"
+  }
+}
+
+class Parent {
+  public void sayHello() {
+    System.out.println("Hello from Parent");
+  }
+}
+
+class Child extends Parent {
+  @Override
+  public void sayHello() {
+    System.out.println("Hello from Child");
+  }
+}
