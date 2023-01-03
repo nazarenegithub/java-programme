@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    double base = getBase();
+    double height = getHeight();
+    double area = computeArea(base, height);
+    displayArea(area);
+  }
+
+  public static double getBase() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter the base of the triangle: ");
+    return scanner.nextDouble();
+  }
+
+  public static double getHeight() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter the height of the triangle: ");
+    return scanner.nextDouble();
+  }
+
+  public static double computeArea(double base, double height) {
+    return (base * height) / 2;
+  }
+
+  public static void displayArea(double area) {
+    System.out.println("The area of the triangle is: " + area);
+  }
+}
