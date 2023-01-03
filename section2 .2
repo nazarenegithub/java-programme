@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void computeAverage() {
+    Scanner scanner = new Scanner(System.in);
+
+    // ask the user to enter the marks for each unit
+    System.out.print("Enter the marks for Java programming: ");
+    double javaMarks = scanner.nextDouble();
+    System.out.print("Enter the marks for networking: ");
+    double networkingMarks = scanner.nextDouble();
+    System.out.print("Enter the marks for math: ");
+    double mathMarks = scanner.nextDouble();
+
+    // calculate the average
+    double average = (javaMarks + networkingMarks + mathMarks) / 3;
+
+    // display the marks and average
+    System.out.println("Marks for Java programming: " + javaMarks);
+    System.out.println("Marks for networking: " + networkingMarks);
+    System.out.println("Marks for math: " + mathMarks);
+    System.out.println("The average is: " + average);
+  }
+}
