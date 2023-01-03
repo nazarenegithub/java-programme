@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    // initialize the result to 0
+    double result = 0;
+
+    // ask the user to enter the first number
+    System.out.print("Enter a number: ");
+    double num = scanner.nextDouble();
+    result = num;
+
+    // ask the user to enter an operator (+, -, *, or /)
+    while (true) {
+      System.out.print("Enter an operator (+, -, *, or /) or type 'q' to quit: ");
+      String operator = scanner.next();
+
+      // if the user enters 'q', exit the loop
+      if (operator.equals("q")) {
+        break;
+      }
+
+      // ask the user to enter the second number
+      System.out.print("Enter another number: ");
+      num = scanner.nextDouble();
+
+      // perform the calculation and update the result
+      if (operator.equals("+")) {
+        result += num;
+      } else if (operator.equals("-")) {
+        result -= num;
+      } else if (operator.equals("*")) {
+        result *= num;
+      } else if (operator.equals("/")) {
+        result /= num;
+      } else {
+        System.out.println("Invalid operator");
+      }
+    }
+
+    // print the final result
+    System.out.println("The result is: " + result);
+  }
+}
