@@ -1,3 +1,9 @@
 The output of the program would be:
 
 1 -1 10 10
+Here's how the output is calculated:
+
+    ast.indexOf('e') returns the index of the first occurrence of the character 'e' in the string ast, which is 1.
+    ast.indexOf('ast') returns the index of the first occurrence of the string "ast" in the string ast, but "ast" does not occur in ast, so the method returns -1.
+    ast.lastIndexOf('l') returns the index of the last occurrence of the character 'l' in the string ast, which is 10.
+    ast.lastIndexOf('v') returns the index of the last occurrence of the character 'v' in the string ast, which is 10.
