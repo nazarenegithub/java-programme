@@ -1,0 +1,48 @@
+ Mutable classes:
+
+    A mutable class is a class whose instances can be modified after they are created. Mutable classes typically have setter methods that allow you to change the values of their fields, and they may not have defensive copying or other measures to prevent the internal state of an object from being modified.
+
+Here is an example of a mutable class in Java:
+
+public class MutableClass {
+  // fields
+  private int value;
+
+  // constructor
+  public MutableClass(int value) {
+    this.value = value;
+  }
+
+  // getter and setter methods
+  public int getValue() {
+    return value;
+  }
+
+  public void setValue(int value) {
+    this.value = value;
+  }
+}
+
+
+
+b. Immutable classes:
+
+    An immutable class is a class whose instances cannot be modified after they are created. Immutable classes typically do not have setter methods and may have defensive copying or other measures to prevent the internal state of an object from being modified.
+
+Here is an example of an immutable class in Java:
+
+public class ImmutableClass {
+  // fields
+  private final int value;
+
+  // constructor
+  public ImmutableClass(int value) {
+    this.value = value;
+  }
+
+  // getter method
+  public int getValue() {
+    return value;
+  }
+}
+
