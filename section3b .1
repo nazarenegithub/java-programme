@@ -45,4 +45,10 @@ public class ImmutableClass {
     return value;
   }
 }
+There are a few situations where mutable classes may be more preferable than immutable classes when writing a Java program:
 
+    Performance: Immutable classes may have a performance overhead compared to mutable classes, as they may require additional memory and CPU resources to create copies of their internal state when modified. In situations where performance is critical, mutable classes may be a better choice.
+
+    Ease of use: Mutable classes may be easier to use than immutable classes, as they allow you to modify their state directly using setter methods. This can make the code simpler and more readable, especially if you need to update the state of an object multiple times.
+
+    Concurrency: In a multithreaded environment, mutable classes can be used to synchronize access to shared data, using techniques such as locks or atomic variables. Immutable classes, on the other hand, do not require synchronization, as their state cannot be modified. However, using mutable classes can lead to race conditions and other concurrency issues if not used carefully.
