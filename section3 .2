@@ -1,0 +1,15 @@
+The scope of a variable refers to the part of the program in which the variable is accessible.
+Here is an example that illustrates the difference between local and global variables:
+
+public class Main {
+  // global variable
+  static int global = 123;
+
+  public static void main(String[] args) {
+    // local variable
+    int local = 456;
+
+    System.out.println(global); // 123
+    System.out.println(local); // 456
+  }
+}
