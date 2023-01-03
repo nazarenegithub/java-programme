@@ -1,0 +1,7 @@
+The output of the program would be:
+
+1 is a digit
+ is a Whitespace character
+A is an Upper case Letter
+0 is a digit
+The for loop iterates over the c array in steps of 2, so it skips every other element. Therefore, the loop only processes the elements at indices 1, 3, and 5, which are the characters '1', ' ', and '0'.
