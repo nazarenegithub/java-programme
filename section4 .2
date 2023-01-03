@@ -1,0 +1,25 @@
+public class Main {
+  public static void main(String[] args) {
+    // display the prime numbers between 1 and 500
+    System.out.println("Prime numbers between 1 and 500:");
+    for (int i = 1; i <= 500; i++) {
+      if (isPrime(i)) {
+        System.out.print(i + " ");
+      }
+    }
+    System.out.println();
+  }
+
+  public static boolean isPrime(int n) {
+    if (n < 2) {
+      return false;
+    }
+    for (int i = 2; i <= Math.sqrt(n); i++) {
+      if (n % i == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+The isPrime() method first checks if the number is less than 2, and returns false if it is, because 0 and 1 are not considered prime numbers. If the number is greater than or equal to 2, the method checks if it is divisible by any integer between 2 and the square root of the number. If the number is divisible by any of these integers, the method returns false; otherwise, it returns true.
