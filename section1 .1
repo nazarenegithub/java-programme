@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    // ask the user to enter their surname
+    System.out.print("Enter your surname: ");
+    String surname = scanner.nextLine();
+
+    // ask the user to enter their age
+    System.out.print("Enter your age: ");
+    int age = scanner.nextInt();
+
+    // print the number of characters in the surname
+    System.out.println("The number of characters in your surname is: " + surname.length());
+
+    // check if the age is even or odd and print the result
+    if (age % 2 == 0) {
+      System.out.println("Your age is an even number.");
+    } else {
+      System.out.println("Your age is an odd number.");
+    }
+  }
+}
