@@ -1,0 +1,10 @@
+The output of the program would be:
+
+Jambo Kenya
+
+Here's how the output is calculated:
+
+    On line 4, a new StringBuffer object named bfobj is created and initialized with the string "Jambo".
+    On line 5, a new StringBuffer object named bfobj1 is created and initialized with the string " Kenya".
+    On line 6, the append() method is called on the bfobj object, and the bfobj1 object is passed as an argument. This appends the contents of bfobj1 to the end of bfobj, resulting in the bfobj object containing the string "Jambo Kenya".
+    On line 7, the println() method is called on the bfobj object, which prints the contents of the object to the console.
